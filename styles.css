@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h5 {
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('your-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Barra de progreso */
+.progress-bar {
+    background-color: #007bff;
+}
+
+/* Formulario */
+form {
+    background-color: #343a40;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Animación de entrada de secciones */
+[data-aos="fade-in"] {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Personalización de los controles del carrusel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #007bff;
+}
+
